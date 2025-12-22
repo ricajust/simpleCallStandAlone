@@ -1,12 +1,13 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Landing } from './views/landing/landing';
 
 @Component({
-  selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.html',
-  styleUrl: './app.scss'
+	selector: 'app-root',
+	imports: [RouterOutlet, Landing],
+	templateUrl: './app.html',
+	styleUrl: './app.scss'
 })
 export class App {
-  protected readonly title = signal('simpleCallStandAlone');
+	protected readonly title = signal('simpleCallStandAlone');
 }
