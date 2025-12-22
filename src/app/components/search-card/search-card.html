@@ -1,0 +1,24 @@
+<mat-card class="search-box" appearance="outlined">
+	<mat-card-header>
+		<mat-card-title> Seja bem vindo!</mat-card-title>
+		<mat-card-subtitle>Busque seu livro</mat-card-subtitle>
+	</mat-card-header>
+	<mat-card-content>
+		<mat-form-field class="form-container">
+			<mat-label>Entre com o título do livro</mat-label>
+			<input matInput type="text" [(ngModel)]="value">
+			@if (value) {
+				<button 
+					matSuffix 
+					matIconButton 
+					aria-label="Clear" 
+					(click)="value=''">
+					<mat-icon>close</mat-icon>
+				</button>
+			}
+		</mat-form-field>
+	</mat-card-content>
+	<mat-card-actions>
+		<button matButton>Pesquisar</button>
+	</mat-card-actions>
+</mat-card>
