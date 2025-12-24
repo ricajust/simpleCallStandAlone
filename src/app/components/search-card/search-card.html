@@ -19,6 +19,6 @@
 		</mat-form-field>
 	</mat-card-content>
 	<mat-card-actions>
-		<button matButton>Pesquisar</button>
+		<button matButton (click)="searching(value)" [disabled]="!value || value.trim().length === 0">Pesquisar</button>
 	</mat-card-actions>
 </mat-card>
