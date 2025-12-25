@@ -1,0 +1,17 @@
+<mat-card class="example-card" appearance="outlined">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{bookInfo?.title}}</mat-card-title>
+    <mat-card-subtitle>{{bookInfo?.author_name}}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://material.angular.dev/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  <mat-card-content>
+	  <p><strong>Ano de publicação:</strong> {{bookInfo?.first_publish_year}}</p>
+	  <p><strong>Edição:</strong> {{bookInfo?.edition_count}}</p>
+	  <p><strong>Idiomas disponíveis:</strong> {{bookInfo?.language}}</p>
+</mat-card-content>
+  <mat-card-actions>
+    <button matButton>LIKE</button>
+    <button matButton>SHARE</button>
+  </mat-card-actions>
+</mat-card>

@@ -9,6 +9,7 @@ import { SearchResponse } from '../interfaces/search-response';
 export class Landing {
 
 	private apiUrl: string = "https://openlibrary.org/search.json";
+	private apiConverUrl: string = "https://covers.openlibrary.org/b/$key/$value-$size.jpg";
 
 	constructor(private httpClient: HttpClient) {
 

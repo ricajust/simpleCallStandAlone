@@ -3,11 +3,12 @@ import { SearchCard } from '../../components/search-card/search-card';
 import { Table } from '../../components/table/table';
 import { SearchResponse } from '../../interfaces/search-response';
 import { Book } from '../../interfaces/book';
+import { Card } from '../../components/card/card';
 
 
 @Component({
 	selector: 'app-landing',
-	imports: [SearchCard, Table],
+	imports: [SearchCard, Table, Card],
 	templateUrl: './landing.html',
 	styleUrl: './landing.scss',
 })

@@ -1,4 +1,9 @@
 <app-search-card (searchFinished)="handleSearchResults($event)"></app-search-card>
+<div class="card-container">
+	@for (item of dataSource(); track $index) {
+		<app-card [bookInfo]="item"></app-card>
+	}
+</div>
 @if(dataSource().length > 0) {
 	<app-table [dataSource]="dataSource()"></app-table>
 }
